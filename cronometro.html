@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cronômetro com Mensagem e Alerta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <img src="logo.png" alt="Logo da Empresa" class="logo">
+    <div class="cronometro">
+        <div class="display">
+            <span id="horas">00</span>:<span id="minutos">00</span>:<span id="segundos">00</span>
+        </div>
+        <div class="controles">
+            <input type="number" id="minutos-input" placeholder="Minutos" min="0" max="999">
+            <button id="start">Iniciar</button>
+            <button id="pause">Pausar</button>
+            <button id="reset">Resetar</button>
+        </div>
+        <div class="mensagem-container">
+            <input type="text" id="mensagem-input" placeholder="Escreva uma mensagem para o palestrante">
+            <button id="enviar-mensagem">Enviar</button>
+            <p id="mensagem-exibida"></p>
+        </div>
+    </div>
+    <div id="alerta-tempo" class="alerta-tempo"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
